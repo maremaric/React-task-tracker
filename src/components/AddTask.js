@@ -22,7 +22,7 @@ function AddTask({ onAdd }) {
     }
 
   return (
-    <form className="add-from" onSubmit={onSubmit}>
+    <form className="add-form" onSubmit={onSubmit}>
         <div className="form-control">
             <label>Task</label>
             <input 
@@ -51,7 +51,7 @@ function AddTask({ onAdd }) {
             />
         </div>
 
-        <input type='submit' value='Save Task' className="btn btn-block mb-40" />
+        <input type='submit' value='Save Task' className="btn btn-block" />
     </form>
   )
 }

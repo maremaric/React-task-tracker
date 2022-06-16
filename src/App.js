@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Tasks from './components/Tasks';
 import AddTask from './components/AddTask';
 import About from './components/About';
+import logo from './logo192.png';
 
 function App() {
 
@@ -107,7 +108,7 @@ const fetchTask = async (id) => {
             </>
             } 
           />
-           <Route path='/about' element={<About />} />
+           <Route path='/about' element={<About logoImg={logo} />} />
         </Routes>
         <Footer />
       </div>
