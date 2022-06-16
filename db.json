@@ -11,12 +11,6 @@
       "text": "Meeting at School",
       "day": "20220706T1330",
       "reminder": true
-    },
-    {
-      "id": 3,
-      "text": "Food Shopping",
-      "day": "20220707T1535",
-      "reminder": false
     }
   ]
 }
