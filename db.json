@@ -4,19 +4,22 @@
       "id": 1,
       "text": "Doctors Appointment",
       "day": "20220705T1430",
-      "reminder": true
+      "reminder": true,
+      "description": "This is description for first task"
     },
     {
       "id": 2,
       "text": "Meeting at School",
       "day": "20220706T1330",
-      "reminder": true
+      "reminder": true,
+      "description": "This is description for second task"
     },
     {
       "text": "Take Test",
       "day": "2022-06-17T08:32",
       "reminder": false,
-      "id": 3
+      "id": 3,
+      "description": "This is description for third task"
     }
   ]
 }

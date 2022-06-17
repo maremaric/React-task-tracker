@@ -5,6 +5,7 @@ function AddTask({ onAdd }) {
     const [text, setText] = useState('');
     const [day, setDay] = useState('');
     const [reminder, setReminder] = useState(false);
+    const [description, setDescription] = useState('');
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -14,11 +15,12 @@ function AddTask({ onAdd }) {
             return;
         }
 
-        onAdd({ text, day, reminder });
+        onAdd({ text, day, reminder, description });
 
         setText('');
         setDay('');
         setReminder(false);
+        setDescription('');
     }
 
   return (
@@ -39,6 +41,14 @@ function AddTask({ onAdd }) {
                 placeholder='Add Day & Time' 
                 value={day} 
                 onChange={(e) => setDay(e.target.value) } 
+            />
+        </div>
+        <div className='form-control'>
+            <label>Description</label>
+            <textarea 
+                value={description} 
+                placeholder='Add Description' 
+                onChange={(e) => setDescription(e.target.value)}
             />
         </div>
         <div className="form-control form-control-check">

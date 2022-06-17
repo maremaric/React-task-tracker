@@ -11,6 +11,7 @@ function Task({ task, onDelete, onToggle }) {
         />
         </h3>
         <p>{moment(task.day).format("llll")}</p>
+        <p className='description'>{task.description}</p>
     </div>
   )
 }

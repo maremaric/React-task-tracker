@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-$reminder-border: green;
+$green-border: green;
 
 @mixin flex-center {
   display: flex;
@@ -90,6 +90,13 @@ body {
           height: 20px;
         }
       }
+
+      textarea {
+        margin: 5px;
+        width: 100%;
+        padding: 10px;
+        resize: none;
+      }
   
       label {
         display: block;
@@ -112,11 +119,20 @@ body {
     cursor: pointer;
   
     &.reminder {
-      border-left: 5px solid $reminder-border;
+      border-left: 5px solid $green-border;
     }
   
     h3 {
       @include flex-center;
+    }
+
+    .description {
+      margin-top: 10px;
+      border: 1px solid $green-border;
+      word-wrap: break-word;
+      border-radius: 10px;
+      background-color: white;
+      padding: 7px;
     }
   }
 
